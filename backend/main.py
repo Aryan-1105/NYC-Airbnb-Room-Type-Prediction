@@ -1,3 +1,4 @@
+from pathlib import Path
 import joblib
 import pandas as pd
 
@@ -48,10 +49,19 @@ Columns = [
 
 
 # ============================================================
+# Paths
+# ============================================================
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+MODEL_PATH = BASE_DIR / "model" / "airbnb_model.pkl"
+
+
+# ============================================================
 # Load Model
 # ============================================================
 
-model = joblib.load("airbnb_model.pkl")
+model = joblib.load(MODEL_PATH)
 
 
 # ============================================================
