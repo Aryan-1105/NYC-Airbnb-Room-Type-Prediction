@@ -73,20 +73,23 @@ The project follows an end-to-end supervised learning workflow:
 
 ## Model Performance
 
-Five classification algorithms were evaluated. The results supplied for
-the project are:
+Five classification algorithms were evaluated using Accuracy and Macro F1-score.
 
-  Model                            Accuracy            Macro F1
-  --------------------- ------------------- -------------------
-  Random Forest           **0.855 (85.5%)**   **0.723 (72.3%)**
-  Gradient Boosting           0.851 (85.1%)       0.703 (70.3%)
-  K-Nearest Neighbors         0.818 (81.8%)       0.688 (68.8%)
-  Decision Tree               0.789 (78.9%)       0.661 (66.1%)
-  Logistic Regression         0.719 (71.9%)       0.570 (57.0%)
+| Model | Accuracy | Macro F1 |
+|---|---:|---:|
+| Random Forest | **85.5%** | **72.3%** |
+| Gradient Boosting | 85.1% | 70.3% |
+| K-Nearest Neighbors | 81.8% | 68.8% |
+| Decision Tree | 78.9% | 66.1% |
+| Logistic Regression | 71.9% | 57.0% |
 
-**Random Forest** achieved the highest reported accuracy and macro
-F1-score among the five evaluated models, so it is the leading candidate
-based on this comparison.
+### Model Performance Comparison
+
+The following visualization compares the performance of the five classification models.
+
+![Model Performance Comparison](assets/screenshots/model-comparison.png)
+
+**Model Selection:** Random Forest achieved the highest reported Accuracy (85.5%) and Macro F1-score (72.3%) among the evaluated models.
 
 ### Confusion Matrix
 
