@@ -2,7 +2,7 @@
 // NYC Airbnb Room Type Predictor
 // Change API_BASE_URL if your FastAPI server is deployed.
 // ============================================================
-const API_BASE_URL = "https://nyc-airbnb-room-type-prediction-5qgf.onrender.com/predict";
+const API_BASE_URL = "https://nyc-airbnb-room-type-prediction-5qgf.onrender.com";
 
 const form = document.getElementById("predictForm");
 const predictBtn = document.getElementById("predictBtn");
